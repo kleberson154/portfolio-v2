@@ -1,4 +1,5 @@
 import Navbar from '../components/layout/Navbar'
+import Hero from '../sections/Hero'
 
 export default function Home() {
   return (
@@ -6,14 +7,14 @@ export default function Home() {
       <Navbar />
 
       <main className="bg-[#050505] text-white">
-        <section
-          id="home"
-          className="min-h-screen flex items-center justify-center"
-        >
-          <h1 className="text-5xl font-bold text-green-400">
-            Kleberson Andrade
-          </h1>
-        </section>
+        <Hero />
+
+        {/* Temporários para testar a Navbar */}
+        <section id="projects" className="min-h-screen" />
+        <section id="technologies" className="min-h-screen" />
+        <section id="about" className="min-h-screen" />
+        <section id="experience" className="min-h-screen" />
+        <section id="contact" className="min-h-screen" />
       </main>
     </>
   )
