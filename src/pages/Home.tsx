@@ -1,5 +1,6 @@
 import Navbar from '../components/layout/Navbar'
 import About from '../sections/About'
+import Experience from '../sections/Experience'
 import Hero from '../sections/Hero'
 import Projects from '../sections/Projects'
 import Technologies from '../sections/Technologies'
@@ -14,9 +15,9 @@ export default function Home() {
         <Projects />
         <Technologies />
         <About />
+        <Experience />
 
         {/* Temporários para testar a Navbar */}
-        <section id="experience" className="min-h-screen" />
         <section id="contact" className="min-h-screen" />
       </main>
     </>
