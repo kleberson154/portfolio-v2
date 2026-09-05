@@ -34,6 +34,32 @@ export default function Navbar() {
       }
     }
 
+    useEffect(() => {
+      if (menuOpen) {
+        document.body.style.overflow = 'hidden'
+      } else {
+        document.body.style.overflow = ''
+      }
+
+      return () => {
+        document.body.style.overflow = ''
+      }
+    }, [menuOpen])
+
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth >= 768) {
+          setMenuOpen(false)
+        }
+      }
+
+      window.addEventListener('resize', handleResize)
+
+      return () => {
+        window.removeEventListener('resize', handleResize)
+      }
+    }, [])
+
     window.addEventListener('scroll', handleScroll)
 
     return () => window.removeEventListener('scroll', handleScroll)
@@ -104,8 +130,9 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setMenuOpen((current) => !current)}
-          className="text-zinc-300 md:hidden"
-          aria-label="Abrir menu"
+          className="flex h-10 w-10 items-center justify-center rounded-md text-zinc-300 transition hover:bg-white/5 hover:text-white md:hidden"
+          aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
+          aria-expanded={menuOpen}
         >
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
