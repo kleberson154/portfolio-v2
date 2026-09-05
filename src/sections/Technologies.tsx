@@ -117,7 +117,7 @@ export default function Technologies() {
   return (
     <section
       id="technologies"
-      className="relative overflow-hidden border-t border-white/5 px-6 py-28 sm:py-32"
+      className="relative overflow-hidden border-t border-white/5 px-6 py-12"
     >
       <div className="pointer-events-none absolute right-0 top-1/3 h-[450px] w-[450px] rounded-full bg-[#a3ff12]/5 blur-[150px]" />
 
@@ -129,7 +129,7 @@ export default function Technologies() {
           transition={{ duration: 0.6 }}
           className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr]"
         >
-          <div className="lg:sticky lg:top-32 lg:self-start">
+          <div className="lg:sticky lg:top-6 lg:self-start">
             <span className="font-mono text-sm uppercase tracking-[0.2em] text-[#a3ff12]">
               02 — Tecnologias
             </span>

@@ -15,7 +15,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden px-6 py-28 sm:py-32"
+      className="relative overflow-hidden px-6 py-12"
     >
       <div className="mx-auto max-w-7xl">
         <SectionReveal>

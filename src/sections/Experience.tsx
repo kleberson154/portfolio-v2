@@ -50,7 +50,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="relative overflow-hidden border-t border-white/5 px-6 py-28 sm:py-32"
+      className="relative overflow-hidden border-t border-white/5 px-6 py-12"
     >
       <div className="pointer-events-none absolute left-0 top-1/3 h-[420px] w-[420px] rounded-full bg-[#a3ff12]/5 blur-[150px]" />
 

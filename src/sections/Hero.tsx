@@ -26,15 +26,15 @@ export default function Hero() {
       />
 
       {/* Glow */}
-      <div className="pointer-events-none absolute left-1/2 top-1/3 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#a3ff12]/5 blur-[150px]" />
+      <div className="pointer-events-none absolute left-1/2 top-1/3 h-125 w-125 -translate-x-1/2 rounded-full bg-[#a3ff12]/5 blur-[150px]" />
 
-      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-16 py-14 sm:py-20 xl:grid-cols-[1.2fr_0.8fr]">
+      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-8 xl:gap-16 py-14 sm:py-20 md:grid-cols-[1.2fr_0.8fr]">
         <div>
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mb-8 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.03] px-4 py-2"
+            className="mb-8 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/3 px-4 py-2"
           >
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#a3ff12] opacity-50" />
@@ -59,7 +59,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="max-w-4xl text-[2.6rem] font-black uppercase leading-[0.92] tracking-[-0.045em] text-white sm:text-6xl lg:text-7xl xl:text-8xl"
+            className="max-w-4xl text-[2.2rem] font-black uppercase leading-[0.92] tracking-[-0.045em] text-white sm:text-6xl lg:text-7xl xl:text-8xl"
           >
             Desenvolvedor
             <br />
@@ -130,7 +130,7 @@ function CodeCard() {
         delay: 0.4,
         duration: 0.7,
       }}
-      className="relative hidden xl:block"
+      className="relative hidden min-[930px]:block"
     >
       <div className="absolute -inset-10 bg-[#a3ff12]/5 blur-3xl" />
 

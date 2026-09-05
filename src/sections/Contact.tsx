@@ -19,7 +19,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden border-t border-white/5 px-6 py-28 sm:py-32"
+      className="relative overflow-hidden border-t border-white/5 px-6 py-12"
     >
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#a3ff12]/5 blur-[160px]" />
 

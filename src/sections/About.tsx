@@ -39,7 +39,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden border-t border-white/5 px-6 py-28 sm:py-32"
+      className="relative overflow-hidden border-t border-white/5 px-6 py-12"
     >
       <div className="mx-auto max-w-7xl">
         <SectionReveal>
