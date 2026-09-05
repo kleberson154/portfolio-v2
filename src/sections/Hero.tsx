@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center overflow-hidden px-6 pt-20"
+      className="relative flex min-h-screen items-center overflow-hidden px-5 pt-20 sm:px-6"
     >
       {/* Grid de fundo */}
       <div
@@ -28,7 +28,7 @@ export default function Hero() {
       {/* Glow */}
       <div className="pointer-events-none absolute left-1/2 top-1/3 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#a3ff12]/5 blur-[150px]" />
 
-      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-16 py-20 lg:grid-cols-[1.2fr_0.8fr]">
+      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-16 py-14 sm:py-20 xl:grid-cols-[1.2fr_0.8fr]">
         <div>
           <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -41,7 +41,7 @@ export default function Hero() {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-[#a3ff12]" />
             </span>
 
-            <span className="font-mono text-xs uppercase tracking-wider text-zinc-400">
+            <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-zinc-400 sm:text-xs sm:tracking-wider">
               {portfolioData.availability}
             </span>
           </motion.div>
@@ -59,7 +59,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="max-w-4xl text-5xl font-black uppercase leading-[0.9] tracking-[-0.05em] text-white sm:text-6xl lg:text-8xl"
+            className="max-w-4xl text-[2.6rem] font-black uppercase leading-[0.92] tracking-[-0.045em] text-white sm:text-6xl lg:text-7xl xl:text-8xl"
           >
             Desenvolvedor
             <br />
@@ -71,7 +71,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.35, duration: 0.5 }}
-            className="mt-8 max-w-xl text-base leading-7 text-zinc-400 sm:text-lg"
+            className="mt-6 max-w-xl text-sm leading-6 text-zinc-400 sm:mt-8 sm:text-lg sm:leading-7"
           >
             {portfolioData.description}
           </motion.p>
@@ -80,11 +80,11 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.45, duration: 0.5 }}
-            className="mt-10 flex flex-wrap gap-4"
+            className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-4"
           >
             <button
               onClick={scrollToProjects}
-              className="flex items-center gap-2 rounded-md bg-[#a3ff12] px-6 py-3 font-semibold text-black transition hover:bg-[#b6ff3f]"
+              className="flex w-full items-center justify-center gap-2 rounded-md bg-[#a3ff12] px-6 py-3 font-semibold text-black transition hover:bg-[#b6ff3f] sm:w-auto"
             >
               Explorar projetos
               <ArrowDown size={18} />
@@ -94,7 +94,8 @@ export default function Hero() {
               href="https://github.com/kleberson154"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-2 rounded-md border border-white/10 px-6 py-3 font-semibold text-zinc-300 transition hover:border-white/20 hover:bg-white/5 hover:text-white"
+              aria-label="Abrir perfil de Kleberson Andrade no GitHub"
+              className="flex w-full items-center justify-center gap-2 rounded-md border border-white/10 px-6 py-3 font-semibold text-zinc-300 transition hover:border-white/20 hover:bg-white/5 hover:text-white sm:w-auto"
             >
               <FaGithub size={18} />
               GitHub
@@ -105,7 +106,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.7 }}
-            className="mt-14 flex flex-wrap gap-x-6 gap-y-2 font-mono text-xs uppercase tracking-wider text-zinc-600"
+            className="mt-10 flex flex-wrap gap-x-4 gap-y-2 font-mono text-[10px] uppercase tracking-wider text-zinc-600 sm:mt-14 sm:gap-x-6 sm:text-xs"
           >
             <span>Java</span>
             <span>Spring Boot</span>
@@ -129,7 +130,7 @@ function CodeCard() {
         delay: 0.4,
         duration: 0.7,
       }}
-      className="relative hidden lg:block"
+      className="relative hidden xl:block"
     >
       <div className="absolute -inset-10 bg-[#a3ff12]/5 blur-3xl" />
 
