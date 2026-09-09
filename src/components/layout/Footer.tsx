@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col gap-8 py-10 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <span className="font-mono text-2xl font-bold tracking-tight text-white">
-            KA<span className="text-[#a3ff12]">.</span>
+            Kleberson A<span className="text-[#a3ff12]">.</span>
           </span>
 
           <p className="mt-3 max-w-md text-sm leading-6 text-zinc-600">
