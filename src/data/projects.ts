@@ -27,7 +27,7 @@ export const projects: Project[] = [
       'PostgreSQL',
       'Docker',
     ],
-    image: '/projects/smartstock-dashboard.png',
+    image: '/projects/smartstock/dashboard.png',
     githubUrl: 'https://github.com/kleberson154/SmartStockBackEnd',
     liveUrl: 'https://smart-stock-front-end-six.vercel.app',
     featured: true,
