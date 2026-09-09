@@ -6,17 +6,14 @@ import { projects } from '../data/projects'
 import SectionReveal from '../components/ui/SectionReveal'
 
 export default function Projects() {
-  const featuredProject = projects.find((project) => project.featured)
+  const featuredProject = projects.find(project => project.featured)
 
   if (!featuredProject) {
     return null
   }
 
   return (
-    <section
-      id="projects"
-      className="relative overflow-hidden px-6 py-12"
-    >
+    <section id="projects" className="relative overflow-hidden px-6 py-12">
       <div className="mx-auto max-w-7xl">
         <SectionReveal>
           <div className="mb-16 max-w-3xl">
@@ -63,10 +60,10 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
     <motion.article
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once: false, amount: 0.1 }}
       transition={{
         duration: 0.7,
-        ease: 'easeOut',
+        ease: 'easeOut'
       }}
       className="group overflow-hidden rounded-2xl border border-white/10 bg-[#090909]"
     >
@@ -76,9 +73,7 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
             Projeto em destaque
           </span>
 
-          <h3 className="mt-1 text-xl font-bold text-white">
-            {project.title}
-          </h3>
+          <h3 className="mt-1 text-xl font-bold text-white">{project.title}</h3>
         </div>
 
         <span className="font-mono text-3xl font-bold text-white/5 sm:text-6xl">
@@ -95,10 +90,10 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
             alt={`Dashboard do projeto ${project.title}`}
             className="w-full object-cover object-top"
             whileHover={{
-              scale: 1.015,
+              scale: 1.015
             }}
             transition={{
-              duration: 0.4,
+              duration: 0.4
             }}
           />
 
@@ -117,7 +112,7 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
           </p>
 
           <div className="mt-4 flex flex-wrap gap-2 sm:mt-8">
-            {project.technologies.map((technology) => (
+            {project.technologies.map(technology => (
               <span
                 key={technology}
                 className="rounded-full border border-white/10 bg-white/2.5 px-2.5 py-1 font-mono text-[10px] text-zinc-400 sm:px-3 sm:py-1.5 sm:text-xs"
@@ -134,7 +129,6 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
             className="group/link flex w-full items-center justify-between rounded-lg bg-[#a3ff12] px-4 py-3 text-sm font-semibold text-black transition hover:bg-[#b6ff3f] sm:px-5 sm:py-4 lg:max-w-xs"
           >
             Ver projeto
-
             <ArrowUpRight
               size={19}
               className="transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"
@@ -149,7 +143,6 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
               className="group/link flex w-full items-center justify-between rounded-lg border border-white/10 px-4 py-3 text-sm font-medium text-zinc-300 transition hover:border-white/20 hover:bg-white/3 hover:text-white sm:px-5 sm:py-4 lg:max-w-xs"
             >
               Aplicação
-
               <ArrowUpRight
                 size={18}
                 className="transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"
