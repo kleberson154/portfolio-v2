@@ -70,7 +70,7 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
       }}
       className="group overflow-hidden rounded-2xl border border-white/10 bg-[#090909]"
     >
-      <div className="flex items-center justify-between border-b border-white/10 px-6 py-5 sm:px-8">
+      <div className="flex items-center justify-between border-b border-white/10 px-5 py-4 sm:px-8 sm:py-5">
         <div>
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-600">
             Projeto em destaque
@@ -81,7 +81,7 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
           </h3>
         </div>
 
-        <span className="font-mono text-4xl font-bold text-white/5 sm:text-6xl">
+        <span className="font-mono text-3xl font-bold text-white/5 sm:text-6xl">
           0{project.id}
         </span>
       </div>
@@ -102,25 +102,25 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
             }}
           />
 
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+          <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent" />
         </div>
       </div>
 
-      <div className="grid gap-10 p-6 sm:p-8 lg:grid-cols-[1fr_0.7fr] lg:p-10">
+      <div className="grid gap-5 p-6 sm:p-8 lg:grid-cols-[1fr_0.7fr] lg:p-10 lg:gap-10">
         <div>
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#a3ff12]">
             {project.category}
           </span>
 
-          <p className="mt-5 max-w-2xl text-base leading-7 text-zinc-400 sm:text-lg">
+          <p className="mt-4 max-w-2xl text-sm leading-6 text-zinc-400 sm:mt-5 sm:text-lg sm:leading-7">
             {project.description}
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-2">
+          <div className="mt-4 flex flex-wrap gap-2 sm:mt-8">
             {project.technologies.map((technology) => (
               <span
                 key={technology}
-                className="rounded-full border border-white/10 bg-white/[0.025] px-3 py-1.5 font-mono text-xs text-zinc-400"
+                className="rounded-full border border-white/10 bg-white/2.5 px-2.5 py-1 font-mono text-[10px] text-zinc-400 sm:px-3 sm:py-1.5 sm:text-xs"
               >
                 {technology}
               </span>
@@ -131,7 +131,7 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
         <div className="flex flex-col justify-end gap-3 lg:items-end">
           <Link
             to={`/projects/${project.slug}`}
-            className="group/link flex w-full items-center justify-between rounded-lg bg-[#a3ff12] px-5 py-4 font-semibold text-black transition hover:bg-[#b6ff3f] lg:max-w-xs"
+            className="group/link flex w-full items-center justify-between rounded-lg bg-[#a3ff12] px-4 py-3 text-sm font-semibold text-black transition hover:bg-[#b6ff3f] sm:px-5 sm:py-4 lg:max-w-xs"
           >
             Ver projeto
 
@@ -146,7 +146,7 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
               href={project.liveUrl}
               target="_blank"
               rel="noreferrer"
-              className="group/link flex w-full items-center justify-between rounded-lg border border-white/10 px-5 py-4 text-sm font-medium text-zinc-300 transition hover:border-white/20 hover:bg-white/[0.03] hover:text-white lg:max-w-xs"
+              className="group/link flex w-full items-center justify-between rounded-lg border border-white/10 px-4 py-3 text-sm font-medium text-zinc-300 transition hover:border-white/20 hover:bg-white/3 hover:text-white sm:px-5 sm:py-4 lg:max-w-xs"
             >
               Aplicação
 
@@ -162,7 +162,7 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
               href={project.githubUrl}
               target="_blank"
               rel="noreferrer"
-              className="group/link flex w-full items-center justify-between rounded-lg border border-white/10 px-5 py-4 text-sm font-medium text-zinc-300 transition hover:border-white/20 hover:bg-white/[0.03] hover:text-white lg:max-w-xs"
+              className="group/link flex w-full items-center justify-between rounded-lg border border-white/10 px-4 py-3 text-sm font-medium text-zinc-300 transition hover:border-white/20 hover:bg-white/3 hover:text-white sm:px-5 sm:py-4 lg:max-w-xs"
             >
               <span className="flex items-center gap-2">
                 <FaGithub size={18} />
