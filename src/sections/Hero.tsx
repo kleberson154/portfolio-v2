@@ -6,7 +6,7 @@ import { portfolioData } from '../data/portfolio'
 export default function Hero() {
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({
-      behavior: 'smooth',
+      behavior: 'smooth'
     })
   }
 
@@ -21,7 +21,7 @@ export default function Hero() {
         style={{
           backgroundImage:
             'linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px)',
-          backgroundSize: '60px 60px',
+          backgroundSize: '60px 60px'
         }}
       />
 
@@ -32,7 +32,8 @@ export default function Hero() {
         <div>
           <motion.div
             initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.4 }}
             transition={{ duration: 0.5 }}
             className="mb-8 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/3 px-4 py-2"
           >
@@ -48,7 +49,8 @@ export default function Hero() {
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.4 }}
             transition={{ delay: 0.1, duration: 0.5 }}
             className="mb-3 font-mono text-sm text-[#a3ff12]"
           >
@@ -57,7 +59,8 @@ export default function Hero() {
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.35 }}
             transition={{ delay: 0.2, duration: 0.6 }}
             className="max-w-4xl text-[2.2rem] font-black uppercase leading-[0.92] tracking-[-0.045em] text-white sm:text-6xl lg:text-7xl xl:text-8xl"
           >
@@ -69,7 +72,8 @@ export default function Hero() {
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.4 }}
             transition={{ delay: 0.35, duration: 0.5 }}
             className="mt-6 max-w-xl text-sm leading-6 text-zinc-400 sm:mt-8 sm:text-lg sm:leading-7"
           >
@@ -78,7 +82,8 @@ export default function Hero() {
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.4 }}
             transition={{ delay: 0.45, duration: 0.5 }}
             className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-4"
           >
@@ -104,7 +109,8 @@ export default function Hero() {
 
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: false, amount: 0.4 }}
             transition={{ delay: 0.7, duration: 0.7 }}
             className="mt-10 flex flex-wrap gap-x-4 gap-y-2 font-mono text-[10px] uppercase tracking-wider text-zinc-600 sm:mt-14 sm:gap-x-6 sm:text-xs"
           >
@@ -125,10 +131,11 @@ function CodeCard() {
   return (
     <motion.div
       initial={{ opacity: 0, x: 40 }}
-      animate={{ opacity: 1, x: 0 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: false, amount: 0.3 }}
       transition={{
         delay: 0.4,
-        duration: 0.7,
+        duration: 0.7
       }}
       className="relative hidden min-[930px]:block"
     >
@@ -155,33 +162,19 @@ function CodeCard() {
             <span className="text-white">Developer </span>
             <span className="text-zinc-400">{'{\n'}</span>
 
-            <span className="text-zinc-400">
-              {'    String name = '}
-            </span>
-            <span className="text-[#a3ff12]">
-              {'"Kleberson Andrade";\n'}
-            </span>
+            <span className="text-zinc-400">{'    String name = '}</span>
+            <span className="text-[#a3ff12]">{'"Kleberson Andrade";\n'}</span>
 
-            <span className="text-zinc-400">
-              {'    String focus = '}
-            </span>
-            <span className="text-[#a3ff12]">
-              {'"Back-end";\n'}
-            </span>
+            <span className="text-zinc-400">{'    String focus = '}</span>
+            <span className="text-[#a3ff12]">{'"Back-end";\n'}</span>
 
-            <span className="text-zinc-400">
-              {'    String stack = '}
-            </span>
+            <span className="text-zinc-400">{'    String stack = '}</span>
             <span className="text-[#a3ff12]">
               {'"Java + Spring Boot";\n\n'}
             </span>
 
-            <span className="text-zinc-400">
-              {'    boolean learning = '}
-            </span>
-            <span className="text-white">
-              {'true;\n'}
-            </span>
+            <span className="text-zinc-400">{'    boolean learning = '}</span>
+            <span className="text-white">{'true;\n'}</span>
 
             <span className="text-zinc-400">{'}'}</span>
           </code>
