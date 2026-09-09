@@ -4,7 +4,7 @@ import {
   Code2,
   GraduationCap,
   MapPin,
-  Server,
+  Server
 } from 'lucide-react'
 import SectionReveal from '../components/ui/SectionReveal'
 
@@ -13,26 +13,26 @@ const highlights = [
     icon: Server,
     label: 'Foco',
     value: 'Back-end',
-    description: 'Java & Spring Boot',
+    description: 'Java & Spring Boot'
   },
   {
     icon: Code2,
     label: 'Também construo',
     value: 'Full Stack',
-    description: 'React & TypeScript',
+    description: 'React & TypeScript'
   },
   {
     icon: GraduationCap,
     label: 'Formação',
     value: 'Ciência da Computação',
-    description: 'Conclusão prevista: 2027',
+    description: 'Conclusão prevista: 2027'
   },
   {
     icon: MapPin,
     label: 'Localização',
     value: 'Uberlândia — MG',
-    description: 'Brasil',
-  },
+    description: 'Brasil'
+  }
 ]
 
 export default function About() {
@@ -48,7 +48,7 @@ export default function About() {
           </span>
         </SectionReveal>
 
-        <div className="mt-12 grid gap-16 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+        <div className="mt-8 grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
           <AboutContent />
 
           <AboutCards />
@@ -63,19 +63,18 @@ function AboutContent() {
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: false, amount: 0.2 }}
       transition={{ duration: 0.6 }}
     >
-      <h2 className="max-w-4xl text-4xl font-black uppercase leading-[0.98] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
+      <h2 className="max-w-4xl text-3xl font-black uppercase leading-[0.98] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
         Gosto de entender
         <br />
         o problema antes de
         <br />
-        escrever o
-        <span className="text-[#a3ff12]"> código.</span>
+        escrever o<span className="text-[#a3ff12]"> código.</span>
       </h2>
 
-      <div className="mt-10 max-w-2xl space-y-5 text-base leading-7 text-zinc-400 sm:text-lg">
+      <div className="mt-7 max-w-2xl space-y-4 text-sm leading-6 text-zinc-400 sm:mt-10 sm:space-y-5 sm:text-lg sm:leading-7">
         <p>
           Sou estudante de Ciência da Computação e desenvolvedor com foco em
           Back-end Java, construindo APIs REST e aplicações com Spring Boot,
@@ -83,9 +82,9 @@ function AboutContent() {
         </p>
 
         <p>
-          Também trabalho com React e TypeScript, o que me permite compreender
-          a aplicação como um todo e transformar uma API em um produto
-          funcional do back-end à interface.
+          Também trabalho com React e TypeScript, o que me permite compreender a
+          aplicação como um todo e transformar uma API em um produto funcional
+          do back-end à interface.
         </p>
 
         <p>
@@ -103,7 +102,6 @@ function AboutContent() {
           className="group inline-flex items-center gap-2 border-b border-zinc-700 pb-1 text-sm font-medium text-zinc-300 transition hover:border-[#a3ff12] hover:text-[#a3ff12]"
         >
           Conheça minha trajetória no LinkedIn
-
           <ArrowUpRight
             size={16}
             className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
@@ -125,19 +123,19 @@ function AboutCards() {
             key={item.label}
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: false, amount: 0.2 }}
             transition={{
               duration: 0.5,
-              delay: index * 0.08,
+              delay: index * 0.08
             }}
             whileHover={{
-              x: 4,
+              x: 4
             }}
-            className="group flex items-center gap-5 rounded-xl border border-white/10 bg-[#090909] p-5 transition hover:border-[#a3ff12]/20"
+            className="group flex items-center gap-4 rounded-xl border border-white/10 bg-[#090909] p-4 transition hover:border-[#a3ff12]/20 sm:gap-5 sm:p-5"
           >
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-[#050505]">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-[#050505] sm:h-12 sm:w-12">
               <Icon
-                size={21}
+                size={19}
                 className="text-zinc-500 transition group-hover:text-[#a3ff12]"
               />
             </div>
@@ -147,13 +145,9 @@ function AboutCards() {
                 {item.label}
               </span>
 
-              <h3 className="mt-1 font-semibold text-zinc-200">
-                {item.value}
-              </h3>
+              <h3 className="mt-1 font-semibold text-zinc-200">{item.value}</h3>
 
-              <p className="mt-0.5 text-sm text-zinc-600">
-                {item.description}
-              </p>
+              <p className="mt-0.5 text-sm text-zinc-600">{item.description}</p>
             </div>
           </motion.div>
         )
