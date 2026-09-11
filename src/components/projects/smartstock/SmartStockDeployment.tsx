@@ -1,25 +1,7 @@
 import { motion } from 'motion/react'
+import { infrastructure, itemsDeployment } from '../../../data/smartstock'
 
 export default function SmartStockDeployment() {
-  const infrastructure = [
-    {
-      label: 'Front-end',
-      title: 'Vercel',
-      description:
-        'A aplicação React é publicada na Vercel e consome a API em produção.'
-    },
-    {
-      label: 'Back-end',
-      title: 'Render',
-      description: 'A API Spring Boot é executada em produção no Render.'
-    },
-    {
-      label: 'Database',
-      title: 'PostgreSQL',
-      description:
-        'O banco de dados PostgreSQL também está hospedado no ambiente de produção.'
-    }
-  ]
 
   return (
     <section className="border-b border-white/5 px-6 py-16 sm:py-20">
@@ -97,28 +79,6 @@ export default function SmartStockDeployment() {
 }
 
 function DeploymentDetails() {
-  const items = [
-    {
-      title: 'Docker',
-      description:
-        'O back-end utiliza Docker para padronizar o ambiente de execução e facilitar o deploy.'
-    },
-    {
-      title: 'Variáveis de ambiente',
-      description:
-        'Credenciais e configurações sensíveis são fornecidas através de variáveis de ambiente em produção.'
-    },
-    {
-      title: 'CORS',
-      description:
-        'O back-end permite requisições da aplicação publicada na Vercel, mantendo o acesso controlado entre front-end e API.'
-    },
-    {
-      title: 'Flyway',
-      description:
-        'As migrations garantem que o banco de dados em produção seja criado e atualizado de forma versionada.'
-    }
-  ]
 
   return (
     <motion.div
@@ -128,7 +88,7 @@ function DeploymentDetails() {
       transition={{ duration: 0.6 }}
       className="mt-12 grid gap-4 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4"
     >
-      {items.map((item, index) => (
+      {itemsDeployment.map((item, index) => (
         <motion.article
           key={item.title}
           initial={{ opacity: 0, y: 20 }}

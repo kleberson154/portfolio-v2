@@ -1,24 +1,7 @@
 import { motion } from 'motion/react'
+import { technologies } from '../../../data/smartstock'
 
 export default function SmartStockTechnologies() {
-  const technologies = [
-    'Java',
-    'Spring Boot',
-    'Spring Security',
-    'JWT',
-    'JPA / Hibernate',
-    'PostgreSQL',
-    'Flyway',
-    'Swagger / OpenAPI',
-    'Docker',
-    'React',
-    'TypeScript',
-    'Vite',
-    'Tailwind CSS',
-    'Axios',
-    'Vercel',
-    'Render'
-  ]
 
   return (
     <section className="border-b border-white/5 px-6 py-16 sm:py-20">

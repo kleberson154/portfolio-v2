@@ -1,62 +1,8 @@
 import { motion } from 'motion/react'
 import { ArrowUpRight } from 'lucide-react'
+import { endpoints, securityItems } from '../../../data/smartstock'
 
 export default function SmartStockApiSecurity() {
-  const endpoints = [
-    {
-      method: 'POST',
-      path: '/api/auth/register',
-      description: 'Cadastro de usuário.'
-    },
-    {
-      method: 'POST',
-      path: '/api/auth/login',
-      description: 'Autenticação e geração do token JWT.'
-    },
-    {
-      method: 'GET',
-      path: '/api/products',
-      description: 'Listagem paginada de produtos.'
-    },
-    {
-      method: 'POST',
-      path: '/api/products',
-      description: 'Criação de produto — acesso ADMIN.'
-    },
-    {
-      method: 'GET',
-      path: '/api/movements',
-      description: 'Histórico paginado de movimentações.'
-    },
-    {
-      method: 'POST',
-      path: '/api/movements',
-      description: 'Entrada ou saída de estoque.'
-    }
-  ]
-
-  const securityItems = [
-    {
-      title: 'JWT',
-      description:
-        'O usuário recebe um token após o login e o envia nas requisições protegidas através do header Authorization.'
-    },
-    {
-      title: 'Spring Security',
-      description:
-        'A API utiliza Spring Security para autenticação, autorização e proteção dos endpoints.'
-    },
-    {
-      title: 'Roles',
-      description:
-        'Perfis USER e ADMIN determinam quais operações cada usuário pode executar.'
-    },
-    {
-      title: 'BCrypt',
-      description:
-        'As senhas são armazenadas utilizando hash BCrypt, sem persistência em texto puro.'
-    }
-  ]
 
   return (
     <section className="border-b border-white/5 px-6 py-16 sm:py-20">

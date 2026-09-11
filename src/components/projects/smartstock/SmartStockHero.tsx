@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom'
 import {
   ArrowLeft,
   ArrowUpRight,
-  Server,
-  Database,
-  ShieldCheck
 } from 'lucide-react'
 import { FaGithub } from 'react-icons/fa'
+import { projectStats } from '../../../data/smartstock'
 
 export default function SmartStockHero() {
   return (
@@ -165,20 +163,4 @@ export default function SmartStockHero() {
   )
 }
 
-const projectStats = [
-  {
-    icon: Server,
-    label: 'Back-end',
-    value: 'Spring Boot'
-  },
-  {
-    icon: Database,
-    label: 'Banco de dados',
-    value: 'PostgreSQL'
-  },
-  {
-    icon: ShieldCheck,
-    label: 'Segurança',
-    value: 'JWT + Roles'
-  }
-]
+

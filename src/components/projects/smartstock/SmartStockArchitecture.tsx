@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { itemsArquitecture, layers } from '../../../data/smartstock'
 
 export default function SmartStockArchitecture() {
   return (
@@ -37,23 +38,6 @@ export default function SmartStockArchitecture() {
 }
 
 function ArchitectureFlow() {
-  const layers = [
-    {
-      label: 'Front-end',
-      title: 'React + TypeScript',
-      description: 'Interface web hospedada na Vercel'
-    },
-    {
-      label: 'API',
-      title: 'Spring Boot',
-      description: 'Back-end REST hospedado no Render'
-    },
-    {
-      label: 'Banco de dados',
-      title: 'PostgreSQL',
-      description: 'Persistência dos dados da aplicação'
-    }
-  ]
 
   return (
     <div className="relative">
@@ -103,38 +87,6 @@ function ArchitectureFlow() {
 }
 
 function ArchitectureDetails() {
-  const items = [
-    {
-      title: 'Autenticação',
-      description:
-        'JWT utilizado para autenticar usuários e proteger os endpoints da API.'
-    },
-    {
-      title: 'Autorização',
-      description:
-        'Perfis USER e ADMIN controlam quais operações cada usuário pode executar.'
-    },
-    {
-      title: 'Migrações',
-      description:
-        'Flyway mantém a evolução do schema do banco de dados versionada.'
-    },
-    {
-      title: 'Containers',
-      description:
-        'Docker é utilizado no ambiente de desenvolvimento e na estratégia de deploy do back-end.'
-    },
-    {
-      title: 'Documentação',
-      description:
-        'Swagger/OpenAPI documenta e permite testar os endpoints da API.'
-    },
-    {
-      title: 'Deploy',
-      description:
-        'Front-end publicado na Vercel e back-end com PostgreSQL hospedados no Render.'
-    }
-  ]
 
   return (
     <motion.div
@@ -144,7 +96,7 @@ function ArchitectureDetails() {
       transition={{ duration: 0.6 }}
       className="mt-12 grid gap-3 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3"
     >
-      {items.map((item, index) => (
+      {itemsArquitecture.map((item, index) => (
         <motion.article
           key={item.title}
           initial={{ opacity: 0, y: 20 }}

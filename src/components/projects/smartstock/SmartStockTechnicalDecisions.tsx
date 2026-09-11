@@ -1,65 +1,7 @@
 import { motion } from 'motion/react'
+import { decisions } from '../../../data/smartstock'
 
 export default function SmartStockTechnicalDecisions() {
-  const decisions = [
-    {
-      number: '01',
-      title: 'JWT + Spring Security',
-      description:
-        'A autenticação utiliza JWT para manter a API stateless. Após o login, o token é enviado nas requisições protegidas e validado pelo back-end.',
-      tag: 'Security'
-    },
-    {
-      number: '02',
-      title: 'Controle de acesso por perfil',
-      description:
-        'Os perfis USER e ADMIN possuem permissões diferentes. Operações administrativas, como criar, editar e remover produtos, são restritas ao ADMIN.',
-      tag: 'Authorization'
-    },
-    {
-      number: '03',
-      title: 'Movimentações de estoque',
-      description:
-        'Após a criação do produto, sua quantidade não é alterada diretamente. Entradas e saídas passam pelo fluxo de movimentações, preservando o histórico do estoque.',
-      tag: 'Business Rule',
-      featured: true
-    },
-    {
-      number: '04',
-      title: 'Operações transacionais',
-      description:
-        'A atualização da quantidade do produto e o registro da movimentação fazem parte da mesma operação, evitando inconsistências entre estoque e histórico.',
-      tag: 'Data Integrity'
-    },
-    {
-      number: '05',
-      title: 'Flyway + validação do schema',
-      description:
-        'As alterações do banco são versionadas através de migrations do Flyway, enquanto o Hibernate valida se as entidades estão compatíveis com o schema existente.',
-      tag: 'Database'
-    },
-    {
-      number: '06',
-      title: 'Tratamento global de erros',
-      description:
-        'Exceções de negócio são tratadas de forma centralizada, retornando respostas HTTP consistentes para situações como produto inexistente, código duplicado e estoque insuficiente.',
-      tag: 'API Design'
-    },
-    {
-      number: '07',
-      title: 'Paginação',
-      description:
-        'Listagens de produtos e movimentações utilizam paginação para evitar o carregamento desnecessário de grandes volumes de dados em uma única requisição.',
-      tag: 'Performance'
-    },
-    {
-      number: '08',
-      title: 'API documentada',
-      description:
-        'Swagger/OpenAPI fornece documentação interativa dos endpoints e permite testar a API, inclusive os recursos protegidos por Bearer Token.',
-      tag: 'Documentation'
-    }
-  ]
 
   return (
     <section className="border-b border-white/5 px-6 py-16 sm:py-20">

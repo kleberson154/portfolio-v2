@@ -1,26 +1,7 @@
 import { motion } from 'motion/react'
+import { gallery, mobileScreens } from '../../../data/smartstock'
 
 export default function SmartStockGallery() {
-  const gallery = [
-    {
-      title: 'Produtos',
-      description:
-        'Listagem de produtos com paginação, controle por perfil e operações administrativas.',
-      image: '/projects/smartstock/products.png'
-    },
-    {
-      title: 'Movimentações',
-      description:
-        'Histórico de entradas e saídas com rastreabilidade das alterações de estoque.',
-      image: '/projects/smartstock/movements.png'
-    },
-    {
-      title: 'Estoque mínimo',
-      description:
-        'Visualização de produtos que atingiram o nível mínimo configurado.',
-      image: '/projects/smartstock/low-stock.png'
-    }
-  ]
 
   return (
     <section className="border-b border-white/5 px-6 py-16 sm:py-20">
@@ -125,16 +106,6 @@ export default function SmartStockGallery() {
 }
 
 function MobileGallery() {
-  const mobileScreens = [
-    {
-      title: 'Dashboard mobile',
-      image: '/projects/smartstock/mobile-dashboard.png'
-    },
-    {
-      title: 'Menu mobile',
-      image: '/projects/smartstock/mobile-menu.png'
-    }
-  ]
 
   return (
     <motion.div

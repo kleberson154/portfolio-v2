@@ -1,28 +1,7 @@
 import { motion } from 'motion/react'
+import { qualityItems } from '../../../data/smartstock'
 
 export default function SmartStockTesting() {
-  const qualityItems = [
-    {
-      title: 'JUnit',
-      description:
-        'Testes automatizados foram utilizados para validar regras e comportamentos importantes da aplicação.'
-    },
-    {
-      title: 'Mockito',
-      description:
-        'Mocks foram utilizados para isolar dependências e testar serviços de forma controlada.'
-    },
-    {
-      title: 'Bean Validation',
-      description:
-        'DTOs utilizam validações para impedir dados inválidos antes que cheguem às regras de negócio.'
-    },
-    {
-      title: 'Global Exception Handler',
-      description:
-        'Erros de negócio são tratados de forma centralizada e retornam respostas HTTP padronizadas.'
-    }
-  ]
 
   return (
     <section className="border-b border-white/5 px-6 py-16 sm:py-20">

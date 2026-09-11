@@ -1,16 +1,9 @@
 import { motion } from 'motion/react'
 import { ArrowUpRight } from 'lucide-react'
 import { FaGithub } from 'react-icons/fa'
+import { learnings, links } from '../../../data/smartstock'
 
 export default function SmartStockConclusion() {
-  const learnings = [
-    'Estruturação de uma API REST com regras de negócio reais',
-    'Autenticação e autorização com JWT e Spring Security',
-    'Integração entre React, Spring Boot e PostgreSQL',
-    'Versionamento de banco de dados com Flyway',
-    'Testes automatizados com JUnit e Mockito',
-    'Deploy de uma aplicação full stack em produção'
-  ]
 
   return (
     <section className="relative overflow-hidden px-6 py-16 sm:py-20">
@@ -114,18 +107,7 @@ export default function SmartStockConclusion() {
 }
 
 function ProjectLinks() {
-  const links = [
-    {
-      label: 'Back-end',
-      description: 'Java + Spring Boot',
-      href: 'https://github.com/kleberson154/SmartStockBackEnd'
-    },
-    {
-      label: 'Front-end',
-      description: 'React + TypeScript',
-      href: 'https://github.com/kleberson154/SmartStockFrontEnd'
-    }
-  ]
+
 
   return (
     <div className="grid border-t border-white/10 sm:grid-cols-2">
