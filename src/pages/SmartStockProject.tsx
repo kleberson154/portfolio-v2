@@ -1,30 +1,27 @@
-import { Link } from 'react-router-dom'
-import { ArrowLeft } from 'lucide-react'
+import SmartStockHero from '../components/projects/smartstock/SmartStockHero'
+import SmartStockOverview from '../components/projects/smartstock/SmartStockOverview'
+import SmartStockArchitecture from '../components/projects/smartstock/SmartStockArchitecture'
+import SmartStockTechnicalDecisions from '../components/projects/smartstock/SmartStockTechnicalDecisions'
+import SmartStockTechnologies from '../components/projects/smartstock/SmartStockTechnologies'
+import SmartStockGallery from '../components/projects/smartstock/SmartStockGallery'
+import SmartStockApiSecurity from '../components/projects/smartstock/SmartStockApiSecurity'
+import SmartStockTesting from '../components/projects/smartstock/SmartStockTesting'
+import SmartStockDeployment from '../components/projects/smartstock/SmartStockDeployment'
+import SmartStockConclusion from '../components/projects/smartstock/SmartStockConclusion'
 
 export default function SmartStockProject() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#050505] px-6 text-white">
-      <div className="text-center">
-        <span className="font-mono text-sm text-[#a3ff12]">
-          Case Study
-        </span>
-
-        <h1 className="mt-4 text-5xl font-black uppercase">
-          SmartStock
-        </h1>
-
-        <p className="mt-5 text-zinc-500">
-          Case study em construção.
-        </p>
-
-        <Link
-          to="/"
-          className="mt-8 inline-flex items-center gap-2 text-sm text-zinc-300 transition hover:text-[#a3ff12]"
-        >
-          <ArrowLeft size={17} />
-          Voltar ao portfólio
-        </Link>
-      </div>
+    <main className="min-h-screen bg-[#050505] text-white">
+      <SmartStockHero />
+      <SmartStockOverview />
+      <SmartStockArchitecture />
+      <SmartStockTechnicalDecisions />
+      <SmartStockTechnologies />
+      <SmartStockGallery />
+      <SmartStockApiSecurity />
+      <SmartStockTesting />
+      <SmartStockDeployment />
+      <SmartStockConclusion />
     </main>
   )
 }
