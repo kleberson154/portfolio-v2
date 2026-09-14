@@ -4,7 +4,7 @@ import { gallery, mobileScreens } from '../../../data/smartstock'
 export default function SmartStockGallery() {
 
   return (
-    <section className="border-b border-white/5 px-6 py-16 sm:py-20">
+    <section className="border-b border-white/5 px-4 py-12 sm:px-6 sm:py-20">
       <div className="mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -17,7 +17,7 @@ export default function SmartStockGallery() {
             05 — Aplicação
           </span>
 
-          <h2 className="mt-5 text-3xl font-black uppercase leading-[0.95] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
+          <h2 className="mt-5 text-3xl font-black uppercase leading-[0.95] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl break-words">
             Do fluxo de estoque à
             <span className="text-[#a3ff12]"> interface.</span>
           </h2>
@@ -78,7 +78,7 @@ export default function SmartStockGallery() {
                   alt={`${item.title} no SmartStock`}
                   whileHover={{ scale: 1.015 }}
                   transition={{ duration: 0.35 }}
-                  className="h-55 w-full rounded-lg object-cover object-top sm:h-65"
+                  className="block h-auto max-h-65 min-h-45 w-full rounded-lg object-cover object-top sm:h-65"
                 />
               </div>
 
@@ -142,7 +142,7 @@ function MobileGallery() {
               <img
                 src={screen.image}
                 alt={screen.title}
-                className="w-full rounded-lg object-cover object-top"
+                className="block h-auto w-full rounded-lg object-cover object-top"
               />
             </div>
           ))}

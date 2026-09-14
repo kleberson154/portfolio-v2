@@ -2,21 +2,21 @@ import { motion } from 'motion/react'
 
 export default function SmartStockOverview() {
   return (
-    <section className="border-b border-white/5 px-6 py-16 sm:py-20">
+    <section className="border-b border-white/5 px-4 py-12 sm:px-6 sm:py-20">
       <div className="mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.6 }}
-          className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20"
+          className="grid min-w-0 gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20"
         >
           <div>
             <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#a3ff12]">
               01 — Visão Geral
             </span>
 
-            <h2 className="mt-5 text-3xl font-black uppercase leading-[0.95] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
+            <h2 className="mt-5 text-3xl font-black uppercase leading-[0.95] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl break-words">
               Um sistema de estoque
               <span className="text-[#a3ff12]"> completo.</span>
             </h2>
@@ -58,7 +58,7 @@ export default function SmartStockOverview() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.6 }}
-          className="mt-8 rounded-2xl border border-[#a3ff12]/15 bg-[#a3ff12]/3 p-6 sm:mt-10 sm:p-8"
+          className="mt-8 rounded-2xl border border-[#a3ff12]/15 bg-[#a3ff12]/3 p-5 sm:mt-10 sm:p-8"
         >
           <div className="grid gap-6 lg:grid-cols-[0.4fr_1fr] lg:items-start">
             <div>

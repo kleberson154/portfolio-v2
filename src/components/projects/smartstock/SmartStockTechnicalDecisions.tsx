@@ -4,7 +4,7 @@ import { decisions } from '../../../data/smartstock'
 export default function SmartStockTechnicalDecisions() {
 
   return (
-    <section className="border-b border-white/5 px-6 py-16 sm:py-20">
+    <section className="border-b border-white/5 px-4 py-12 sm:px-6 sm:py-20">
       <div className="mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -17,7 +17,7 @@ export default function SmartStockTechnicalDecisions() {
             03 — Decisões Técnicas
           </span>
 
-          <h2 className="mt-5 text-3xl font-black uppercase leading-[0.95] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
+          <h2 className="mt-5 text-3xl font-black uppercase leading-[0.95] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl break-words">
             Mais do que
             <br />
             apenas um

@@ -6,7 +6,7 @@ import { learnings, links } from '../../../data/smartstock'
 export default function SmartStockConclusion() {
 
   return (
-    <section className="relative overflow-hidden px-6 py-16 sm:py-20">
+    <section className="relative overflow-hidden px-4 py-12 sm:px-6 sm:py-20">
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-125 w-125 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#a3ff12]/5 blur-[160px]" />
 
       <div className="relative mx-auto max-w-7xl">
@@ -23,7 +23,7 @@ export default function SmartStockConclusion() {
                 09 — Resultado
               </span>
 
-              <h2 className="mt-5 max-w-4xl text-3xl font-black uppercase leading-[0.95] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
+              <h2 className="mt-5 max-w-4xl text-3xl font-black uppercase leading-[0.95] tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl break-words">
                 Do conceito ao
                 <span className="text-[#a3ff12]"> deploy.</span>
               </h2>

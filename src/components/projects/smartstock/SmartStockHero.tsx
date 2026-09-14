@@ -9,7 +9,7 @@ import { projectStats } from '../../../data/smartstock'
 
 export default function SmartStockHero() {
   return (
-    <section className="relative overflow-hidden border-b border-white/5 px-6 pb-16 pt-28 sm:pb-20 sm:pt-32">
+    <section className="relative overflow-hidden border-b border-white/5 px-4 pb-12 pt-24 sm:px-6 sm:pb-20 sm:pt-32">
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.025]"
         style={{
@@ -39,8 +39,8 @@ export default function SmartStockHero() {
           </Link>
         </motion.div>
 
-        <div className="mt-12 grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
-          <div>
+        <div className="mt-10 grid gap-10 lg:mt-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end lg:gap-12">
+          <div className="min-w-0">
             <motion.span
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ export default function SmartStockHero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="mt-5 text-5xl font-black uppercase leading-[0.9] tracking-tighter text-white sm:text-7xl lg:text-8xl"
+              className="mt-5 text-4xl font-black uppercase leading-[0.9] tracking-tighter text-white sm:text-7xl lg:text-8xl"
             >
               Smart
               <span className="text-[#a3ff12]">Stock.</span>
@@ -117,7 +117,7 @@ export default function SmartStockHero() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.35, duration: 0.6 }}
-            className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1"
+            className="grid min-w-0 gap-3 sm:grid-cols-3 lg:grid-cols-1"
           >
             {projectStats.map(stat => {
               const Icon = stat.icon
@@ -155,7 +155,7 @@ export default function SmartStockHero() {
           <img
             src="/projects/smartstock/dashboard.png"
             alt="Dashboard da aplicação SmartStock"
-            className="w-full rounded-xl object-cover object-top"
+            className="block h-auto w-full rounded-xl object-cover object-top"
           />
         </motion.div>
       </div>
