@@ -89,6 +89,7 @@ export const projects: Project[] = [
     technologies: ['React', 'Tailwind CSS', 'Vue', 'JavaScript'],
     image: '/projects/open-ui-library.png',
     githubUrl: 'https://github.com/alirezazim03/OpenUI-Library',
+    liveUrl: 'https://www.openuilibrary.com/',
     contribution: true
   }
 ]
