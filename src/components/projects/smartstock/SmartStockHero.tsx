@@ -1,9 +1,6 @@
 import { motion } from 'motion/react'
 import { Link } from 'react-router-dom'
-import {
-  ArrowLeft,
-  ArrowUpRight,
-} from 'lucide-react'
+import { ArrowLeft, ArrowUpRight } from 'lucide-react'
 import { FaGithub } from 'react-icons/fa'
 import { projectStats } from '../../../data/smartstock'
 
@@ -162,5 +159,3 @@ export default function SmartStockHero() {
     </section>
   )
 }
-
-

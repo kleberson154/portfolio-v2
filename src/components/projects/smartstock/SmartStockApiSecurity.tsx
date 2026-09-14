@@ -3,7 +3,6 @@ import { ArrowUpRight } from 'lucide-react'
 import { endpoints, securityItems } from '../../../data/smartstock'
 
 export default function SmartStockApiSecurity() {
-
   return (
     <section className="border-b border-white/5 px-4 py-12 sm:px-6 sm:py-20">
       <div className="mx-auto max-w-7xl">

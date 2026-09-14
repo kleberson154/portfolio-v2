@@ -38,7 +38,6 @@ export default function SmartStockArchitecture() {
 }
 
 function ArchitectureFlow() {
-
   return (
     <div className="relative">
       <div className="space-y-4">
@@ -87,7 +86,6 @@ function ArchitectureFlow() {
 }
 
 function ArchitectureDetails() {
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}

@@ -2,7 +2,6 @@ import { motion } from 'motion/react'
 import { decisions } from '../../../data/smartstock'
 
 export default function SmartStockTechnicalDecisions() {
-
   return (
     <section className="border-b border-white/5 px-4 py-12 sm:px-6 sm:py-20">
       <div className="mx-auto max-w-7xl">

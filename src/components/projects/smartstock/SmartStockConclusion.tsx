@@ -4,7 +4,6 @@ import { FaGithub } from 'react-icons/fa'
 import { learnings, links } from '../../../data/smartstock'
 
 export default function SmartStockConclusion() {
-
   return (
     <section className="relative overflow-hidden px-4 py-12 sm:px-6 sm:py-20">
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-125 w-125 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#a3ff12]/5 blur-[160px]" />
@@ -107,8 +106,6 @@ export default function SmartStockConclusion() {
 }
 
 function ProjectLinks() {
-
-
   return (
     <div className="grid border-t border-white/10 sm:grid-cols-2">
       {links.map((link, index) => (
