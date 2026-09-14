@@ -67,17 +67,10 @@ export const projects: Project[] = [
     id: 3,
     slug: 'zettanote',
     title: 'ZettaNote',
-    category: 'Open Source',
+    category: 'Open Source Contribution',
     description:
-      'Contribuição em uma aplicação open source de produtividade inspirada no Notion, com editor Markdown, gerenciamento de páginas, autenticação, tarefas e compartilhamento.',
-    technologies: [
-      'React',
-      'Vite',
-      'Tailwind CSS',
-      'Node.js',
-      'MongoDB',
-      'Docker'
-    ],
+      'Contribuição open source com refatoração das telas de Login e Signup, criando um componente Input reutilizável para reduzir duplicação e melhorar a organização do front-end.',
+    technologies: ['React', 'Vite', 'Tailwind CSS', 'JavaScript'],
     image: '/projects/zettanote.png',
 
     githubUrl: 'https://github.com/braydenidzenga/ZettaNote',

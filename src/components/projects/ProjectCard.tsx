@@ -37,7 +37,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
 
             {project.contribution && (
               <span className="ml-3 rounded-full border border-white/10 px-2 py-1 font-mono text-[9px] uppercase tracking-[0.14em] text-zinc-600">
-                Contribuição
+                Open Source
               </span>
             )}
 
